@@ -1,7 +1,11 @@
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Grade {
 
     Grade(){}
@@ -11,31 +15,19 @@ public class Grade {
         this.subject = subject;
     }
 
+    @XmlElement
     private float value;
+    public float getValue() { return value; }
+    public void setValue(float value) { this.value = value; }
+
+    @XmlElement
     private Date date;
+    public Date getDate() { return date; }
+    public void setDate(Date date) { this.date = date; }
+
+    @XmlElement
     private Subject subject;
-
-
-    //getters
-    public float getValue() {
-        return value;
-    }
-    public Date getDate() {
-        return date;
-    }
-    public Subject getSubject() {
-        return subject;
-    }
-
-    //setters
-    public void setValue(float value) {
-        this.value = value;
-    }
-    public void setDate(Date date) {
-        this.date = date;
-    }
-    public void setSubject(Subject subject) {
-        this.subject = subject;
-    }
+    public Subject getSubject() { return subject; }
+    public void setSubject(Subject subject) { this.subject = subject; }
 
 }
