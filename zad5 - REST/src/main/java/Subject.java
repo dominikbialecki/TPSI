@@ -1,7 +1,7 @@
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 public class Subject {
 
     Subject(){}

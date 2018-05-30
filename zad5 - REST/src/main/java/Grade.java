@@ -8,6 +8,9 @@ import java.util.Date;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Grade {
 
+    private static int lastId = 0;
+    private synchronized int generateId(){ return lastId++; }
+
     Grade(){}
     Grade(float value, Date date, Subject subject){
         this.value = value;
@@ -15,9 +18,19 @@ public class Grade {
         this.subject = subject;
     }
 
+
     @XmlElement
-    private float value;
-    public float getValue() { return value; }
+    private Integer id;
+    public Integer getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @XmlElement
+    private Float value;
+    public Float getValue() { return value; }
     public void setValue(float value) { this.value = value; }
 
     @XmlElement
