@@ -1,23 +1,8 @@
-#students {
-    display:none;
-}
-#subjects{
-    display:none;
+div {
+    display: none;
 }
 
-#grades{
-    display:none;
-}
-
-#students#students:target{
-    display:block;
-}
-
-#subjects#subjects:target{
-    display:block;
-}
-
-#grades#grades:target{
+div:target{
     display:block;
 }
 

@@ -1,0 +1,60 @@
+body {
+    display:flex;
+    flex-wrap:wrap;
+    background-color:#3F42FF;
+    color:#070C24;
+    font-family: "Arial", Times, serif;
+    font-size: 1em;
+}
+
+a:hover{
+    color:#070c24;
+    text-decoration: underline;
+}
+a{
+    color:#070c24;
+    text-decoration: none;
+}
+h1, h2{
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+
+
+header {
+    flex: 100%;
+    background-color:#20217F;
+}
+
+nav {
+    flex:20%;
+    background:linear-gradient(to top, #3F42FF, #20217F);
+ }
+
+ article {
+
+ }
+
+ footer {
+    flex: 100%;
+     background-color:#3335CC;
+
+}
+
+div {
+    display: none;
+}
+
+div:target{
+    display:block;
+}
+
