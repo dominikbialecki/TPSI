@@ -20,7 +20,6 @@ public class DataBase {
 
     private Map<Integer, Student> students = new HashMap<>();
     private Map<Integer, Subject> subjects = new HashMap<>();
-    private Map<Integer, Grade> grades= new HashMap<>();
 
     public Map<Integer, Student> getStudents(){
         return this.students;
@@ -39,10 +38,6 @@ public class DataBase {
         this.subjects.put(subject.getId(), subject);
     }
 
-    public void addGrade(int studentId, Grade grade){
-        students.get(studentId).getGrades().add(grade);
-        grades.put(grade.getId(),grade);
-    }
 
     public Grade getGrade(int studentId, int gradeId){
     Student student = students.get(studentId);
