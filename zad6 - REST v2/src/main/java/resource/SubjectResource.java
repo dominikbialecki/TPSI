@@ -1,32 +1,31 @@
-import javax.print.attribute.standard.Media;
+package resource;
+
+import Database.DataBase;
+import model.Subject;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Collection;
+import java.util.List;
 
 
 @Path("subjects")
 @XmlRootElement(name="subjects")
-public class SubjectResource {
-    DataBase dataBase = DataBase.getInstance();
-    @XmlElement(name="subject")
-    Collection<Subject> subjects;
+public class SubjectResource extends Resource {
+    private DataBase dataBase = DataBase.getInstance();
+
+
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
-    public Response getAll() {
-        subjects = dataBase.getSubjects().values();
-        return Response.status(200).entity(this).build();
+    @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    public Collection<Subject> getSubjects() {
+        Collection<Subject> subjects = dataBase.getSubjects().values();
+        return subjects;
     }
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllJson() {
-        subjects = dataBase.getSubjects().values();
-        return Response.status(200).entity(subjects).build();
-    }
 
     @GET
     @Path("{id}")
@@ -78,12 +77,20 @@ public class SubjectResource {
 
     @DELETE
     @Path("{id}")
-    public Response deleteSubject(@PathParam("id") int id){
-        if(!dataBase.getSubjects().containsKey(id))
-            return Response.status(404).build();
+    public Response deleteSubject(@PathParam("id") String id){
+        Response.ResponseBuilder builder = Response.status(404);
+        int subjectId;
+        try {
+            subjectId = convertId(id);
+        } catch (NumberFormatException e) {
+            return Response.status(400).build();
+        }
+        if (dataBase.getSubjects().containsKey(subjectId)) {
+            builder.status(200);
+            dataBase.getSubjects().remove(subjectId);
+        }
+        return builder.build();
 
-        dataBase.getSubjects().remove(id);
-        return Response.status(200).build();
     }
 
 }

@@ -1,13 +1,21 @@
+package main;
+
+import Database.DataBase;
+import model.Grade;
+import model.Student;
+import model.Subject;
+import resource.*;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
+import org.glassfish.jersey.linking.DeclarativeLinkingFeature;
 import org.glassfish.jersey.server.ResourceConfig;
+import resource.StudentsResource;
 
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.TimeZone;
 
 public class TPSIRest1 {
 
@@ -17,14 +25,18 @@ public class TPSIRest1 {
 
 
             URI baseUri = UriBuilder.fromUri("http://localhost/").port(9998).build();
-            ResourceConfig config = new ResourceConfig(SubjectResource.class);
-            config.register(StudentResource.class);
+            ResourceConfig config = new ResourceConfig()
+                    .packages("resources")
+                    .register(DeclarativeLinkingFeature.class);
+            config.register(SubjectResource.class);
             config.register(GradeResource.class);
+            config.register(StudentResource.class);
+            config.register(StudentsResource.class);
             HttpServer server = GrizzlyHttpServerFactory.createHttpServer(baseUri, config);
 
     }
 
-    public static void createData(DataBase dataBase){
+    private static void createData(DataBase dataBase){
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         try {
@@ -39,8 +51,10 @@ public class TPSIRest1 {
             dataBase.addSubject(subject1);
             dataBase.addSubject(subject2);
             Grade grade1 = new Grade(5f, new Date(), subject1);
-            ArrayList<Grade> gradesS1 = new ArrayList<Grade>();
+            Grade grade2 = new Grade(3.5f, new Date(), subject2);
+            ArrayList<Grade> gradesS1 = new ArrayList<>();
             gradesS1.add(grade1);
+            gradesS1.add(grade2);
             student1.setGrades(gradesS1);
 
         } catch (Exception e){

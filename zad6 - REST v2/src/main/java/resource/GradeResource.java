@@ -1,3 +1,9 @@
+package resource;
+
+import Database.DataBase;
+import model.Grade;
+import model.Student;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -8,33 +14,21 @@ import java.util.List;
 
 @Path("students/{studentId}/grades")
 @XmlRootElement(name="grades")
-public class GradeResource {
+public class GradeResource extends Resource {
 
 
     DataBase dataBase = DataBase.getInstance();
     @XmlElement(name="grade")
-    List<Grade> grades;
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
-    public Response getAllGrades(@PathParam("studentId") int studentId) {
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Grade> getGrades(@PathParam("studentId") int studentId) {
         Student student = dataBase.getStudents().get(studentId);
-        if (student != null) {
-            grades = student.getGrades();
-            return Response.status(200).entity(this).build();
+        if (student == null) {
+            throw new NotFoundException("Grade was not found");
         }
-        return Response.status(404).build();
-    }
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAllGradesJson(@PathParam("studentId") int studentId) {
-        Student student = dataBase.getStudents().get(studentId);
-        if (student != null) {
-            grades = student.getGrades();
-            return Response.status(200).entity(grades).build();
-        }
-        return Response.status(404).build();
+        List<Grade> grades = student.getGrades();
+        return grades;
     }
 
     @GET
@@ -76,7 +70,6 @@ public class GradeResource {
     }
 
     @POST
-    @Path("{gradeId}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response postGrade(Grade entity, @PathParam("studentId") int studentId){

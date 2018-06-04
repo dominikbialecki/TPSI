@@ -1,3 +1,9 @@
+package Database;
+
+import model.Grade;
+import model.Student;
+import model.Subject;
+
 import java.util.HashMap;
 import java.util.Map;
 
