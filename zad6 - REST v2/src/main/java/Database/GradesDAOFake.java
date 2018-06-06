@@ -21,7 +21,6 @@ public class GradesDAOFake implements DAOInterface<Grade> {
     }
 
     public Grade getData(int gradeId) {
-        System.out.println(studentId + " " + gradeId);
         return this.studentDAO.getData(studentId).getGrades().get(gradeId);
     }
 
