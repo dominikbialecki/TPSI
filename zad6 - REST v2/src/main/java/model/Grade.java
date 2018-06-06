@@ -5,7 +5,6 @@ import org.glassfish.jersey.linking.InjectLink;
 import org.glassfish.jersey.linking.InjectLinks;
 import resource.GradeResource;
 import resource.StudentResource;
-import resource.StudentsResource;
 import resource.SubjectResource;
 
 import javax.ws.rs.core.Link;
@@ -81,7 +80,7 @@ public class Grade {
             @InjectLink(
                     rel = "student",
                     resource = StudentResource.class,
-                    method = "getStudent"),
+                    method = "getData"),
             @InjectLink(
                     rel = "subject",
                     resource = SubjectResource.class,

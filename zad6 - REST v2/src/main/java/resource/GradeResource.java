@@ -1,104 +1,55 @@
 package resource;
 
-import Database.DataBase;
 import model.Grade;
-import model.Student;
+import service.GradesService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
+import java.util.Collection;
 
 
 @Path("students/{studentId}/grades")
 @XmlRootElement(name="grades")
-public class GradeResource extends Resource {
+public class GradeResource {
 
 
-    DataBase dataBase = DataBase.getInstance();
     @XmlElement(name="grade")
 
     @GET
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Grade> getGrades(@PathParam("studentId") int studentId) {
-        Student student = dataBase.getStudents().get(studentId);
-        if (student == null) {
-            throw new NotFoundException("Grade was not found");
-        }
-        List<Grade> grades = student.getGrades();
-        return grades;
+    public Collection<Grade> getGrades(@PathParam("studentId") String studentId) {
+        return new GradesService(studentId).getGrades();
     }
 
     @GET
     @Path("{gradeId}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response getGrade(@PathParam("studentId") int studentId, @PathParam("gradeId") int gradeId) {
-        Grade grade = dataBase.getGrade(studentId, gradeId);
-        if (grade != null) {
-            return Response.status(200).entity(grade).build();
-        }
-        return Response.status(404).build();
+    public Response getGrade(@PathParam("studentId") String studentId, @PathParam("gradeId") String gradeId) {
+        return new GradesService(studentId).getGrade(gradeId);
     }
 
     @PUT
     @Path("{gradeId}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response putGrade(Grade entity, @PathParam("studentId") int studentId, @PathParam("gradeId") int gradeId){
-        Grade grade = dataBase.getGrade(studentId, gradeId);
-        if (grade == null){
-            return Response.status(404).build();
-        }
-        boolean modified = false;
-        if (entity.getDate()!=null){
-            grade.setDate(entity.getDate());
-            modified = true;
-        }
-        if (entity.getSubject()!=null){
-            grade.setSubject(entity.getSubject());
-            modified = true;
-        }
-        if (entity.getValue()!=null){
-            grade.setValue(entity.getValue());
-            modified = true;
-        }
-        if (modified)
-            return Response.status(200).entity(entity).build();
-        return Response.status(304).build();
+    public Response putGrade(Grade entity, @PathParam("studentId") String studentId, @PathParam("gradeId") String gradeId){
+        return new GradesService(studentId).putGrade(entity, gradeId);
     }
 
     @POST
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Response postGrade(Grade entity, @PathParam("studentId") int studentId){
-
-        if (!dataBase.getSubjects().containsKey(entity.getSubject())
-            & entity.getSubject()!=null
-            & entity.getValue()!=null
-            & entity.getDate()!=null
-            & entity.getId()!=null) {
-                Student student = dataBase.getStudents().get(studentId);
-                if (student != null) {
-                    Grade grade = student.getGrades().get(entity.getId());
-                    if (grade != null)
-                        return Response.status(403).build();
-                    student.getGrades().add(entity);
-                    return Response.status(201).entity(entity).build();
-                }
-        }
-        return Response.status(400).build();
+    public Response postGrade(Grade entity, @PathParam("studentId") String studentId){
+        return new GradesService(studentId).postGrade(entity);
     }
 
     @DELETE
     @Path("{gradeId}")
-    public Response deleteGrade(@PathParam("studentId") int studentId, @PathParam("gradeId") int gradeId){
-        if (dataBase.getGrade(studentId, gradeId) != null){
-            dataBase.getStudents().get(studentId).getGrades().remove(gradeId);
-            return Response.status(200).build();
-        }
-        return Response.status(404).build();
+    public Response deleteGrade(@PathParam("studentId") String studentId, @PathParam("gradeId") String gradeId){
+        return new GradesService(studentId).deleteGrade(gradeId);
     }
 }
 

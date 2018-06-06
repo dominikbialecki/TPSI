@@ -5,13 +5,12 @@ import org.glassfish.jersey.linking.InjectLink;
 import org.glassfish.jersey.linking.InjectLinks;
 import resource.GradeResource;
 import resource.StudentResource;
-import resource.StudentsResource;
 
-import javax.inject.Inject;
 import javax.ws.rs.core.Link;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -61,11 +60,11 @@ public class Student {
                     rel = "self",
                     resource = StudentResource.class,
                     bindings = @Binding(name = "id", value = "${instance.index}"),
-                    method = "getStudent"),
+                    method = "getData"),
             @InjectLink(
                     rel = "parent",
-                    method = "getStudents",
-                    resource = StudentsResource.class),
+                    method = "getCollection",
+                    resource = StudentResource.class),
             @InjectLink(
                     rel = "grades",
                     method = "getGrades",
