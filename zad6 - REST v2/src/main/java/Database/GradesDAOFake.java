@@ -17,23 +17,24 @@ public class GradesDAOFake implements DAOInterface<Grade> {
     private StudentDAOFake studentDAO = StudentDAOFake.getInstance();
 
     public Collection<Grade> getCollection() {
-        return this.studentDAO.getData(studentId).getGrades();
+        return this.studentDAO.getData(studentId).getGrades().values();
     }
 
     public Grade getData(int gradeId) {
-        return this.studentDAO.getGrade(this.studentId, gradeId);
+        System.out.println(studentId + " " + gradeId);
+        return this.studentDAO.getData(studentId).getGrades().get(gradeId);
     }
 
     public void updateData(Grade object) {
-        Grade grade = this.studentDAO.getGrade(this.studentId, object.getId());
+        Grade grade = this.getData(object.getId());
         grade.setDate(object.getDate());
         grade.setSubject(object.getSubject());
         grade.setValue(object.getValue());
-        grade.setStudent(object.getStudent());
+        this.studentDAO.getData(studentId).getGrades().put(grade.getId(), grade);
     }
 
     public void deleteData(int gradeId) {
-        this.getCollection().remove(this.getData(gradeId));
+        this.studentDAO.getData(studentId).getGrades().remove(gradeId);
     }
 
     public void addData(Grade object) {
@@ -41,6 +42,6 @@ public class GradesDAOFake implements DAOInterface<Grade> {
     }
 
     public boolean containsData(int id) {
-        return getCollection().contains(id);
+        return studentDAO.getData(studentId).getGrades().containsKey(id);
     }
 }

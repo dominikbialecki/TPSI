@@ -9,10 +9,7 @@ import resource.StudentResource;
 import javax.ws.rs.core.Link;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @XmlRootElement(name="student")
 @XmlAccessorType(XmlAccessType.NONE)
@@ -30,7 +27,7 @@ public class Student {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
-        this.grades = new ArrayList<>();
+        this.grades = new HashMap<>();
     }
 
 
@@ -79,9 +76,9 @@ public class Student {
 
 
     @XmlTransient
-    private ArrayList<Grade> grades;
-    public ArrayList<Grade> getGrades() { return grades; }
-    public void setGrades(ArrayList<Grade> grades) { this.grades = grades; }
+    private Map<Integer, Grade> grades;
+    public Map<Integer, Grade> getGrades() { return grades; }
+    public void setGrades(Map<Integer, Grade> grades) { this.grades = grades; }
 
 
 }

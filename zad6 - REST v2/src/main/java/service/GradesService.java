@@ -4,11 +4,9 @@ import Database.DAOInterface;
 import Database.GradesDAOFake;
 import Database.SubjectDAOFake;
 import model.Grade;
-import model.Student;
 import model.Subject;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Collection;
 
@@ -39,6 +37,7 @@ public class GradesService extends Service {
         } catch (NumberFormatException e){
             return responseBuilder.build();
         }
+        System.out.println(intGradeId);
         Grade grade = gradesDAO.getData(intGradeId);
         if (grade != null) {
             return responseBuilder.status(200).entity(grade).build();

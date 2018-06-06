@@ -22,10 +22,10 @@ public class StudentDAOFake implements DAOInterface<Student> {
             Grade grade1 = new Grade(5f, new Date(), subjectDAO.getData(0));
             Grade grade2 = new Grade(3.5f, new Date(), subjectDAO.getData(1));
 
-            student1.setGrades(new ArrayList<Grade>(){
+            student2.setGrades(new HashMap<Integer, Grade>(){
                 {
-                    add(grade1);
-                    add(grade2);
+                    put(grade1.getId(), grade1);
+                    put(grade2.getId(), grade2);
                 }
             });
             students = new HashMap<Integer, Student>(){
@@ -84,9 +84,5 @@ public class StudentDAOFake implements DAOInterface<Student> {
     }
 
 
-
-    public Grade getGrade(int studentId, int gradeId) {
-        return this.getData(studentId).getGrades().get(gradeId);
-    }
 
 }

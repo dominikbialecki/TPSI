@@ -3,10 +3,12 @@ package model;
 import org.glassfish.jersey.linking.Binding;
 import org.glassfish.jersey.linking.InjectLink;
 import org.glassfish.jersey.linking.InjectLinks;
+import org.glassfish.jersey.server.ParamException;
 import resource.GradeResource;
 import resource.StudentResource;
 import resource.SubjectResource;
 
+import javax.ws.rs.BadRequestException;
 import javax.ws.rs.core.Link;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -41,15 +43,9 @@ public class Grade {
     @XmlElement
     private Float value;
     public Float getValue() { return value; }
-    public void setValue(float value) { this.value = value; }
-
-    @XmlElement
-    private Student student;
-    public Student getStudent() {
-        return student;
-    }
-    public void setStudent(Student student) {
-        this.student = student;
+    public void setValue(float value) throws BadRequestException {
+        if (value % 0.5 != 0 | value <2 | value >5) throw new BadRequestException();
+        this.value = value;
     }
 
 
@@ -68,14 +64,11 @@ public class Grade {
             @InjectLink(
                     rel = "self",
                     resource = GradeResource.class,
-                    bindings = {
-                            @Binding(name = "gradeId", value = "${instance.id}"),
-                            @Binding(name="studentId", value = "${instance.student.id}")},
+                    bindings = @Binding(name = "gradeId", value = "${instance.id}"),
                     method = "getGrade"),
             @InjectLink(
                     rel = "parent",
                     resource = GradeResource.class,
-                    bindings = @Binding(name="studentId", value = "${instance.student.id}"),
                     method = "getGrades"),
             @InjectLink(
                     rel = "student",
