@@ -74,15 +74,17 @@ public class StudentDAOFake implements DAOInterface<Student> {
     }
 
     @Override
-    public void addData(Student student) {
+    public Student addData(Student entity) {
+        Student student = new Student(
+                entity.getName(),
+                entity.getSurname(),
+                entity.getBirthDate());
         students.put(student.getIndex(), student);
+        return student;
     }
 
     @Override
     public boolean containsData(int id) {
         return students.containsKey(id);
     }
-
-
-
 }

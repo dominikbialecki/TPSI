@@ -35,7 +35,8 @@ public class StudentResource {
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response postSubject(Student entity) {
-        return this.studentService.postStudent(entity);
+        String path = "students/";
+        return this.studentService.postStudent(entity, path);
     }
 
     @Path("{id}")

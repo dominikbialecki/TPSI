@@ -11,6 +11,6 @@ public interface DAOInterface<T> {
     T getData(int id);
     void updateData(T object);
     void deleteData(int id);
-    void addData(T object);
+    T addData(T object);
     boolean containsData(int id);
 }

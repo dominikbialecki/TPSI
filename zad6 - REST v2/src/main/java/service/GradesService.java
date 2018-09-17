@@ -8,6 +8,8 @@ import model.Subject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 
 public class GradesService extends Service {
@@ -73,17 +75,21 @@ public class GradesService extends Service {
         return responseBuilder.build();
     }
 
-    public Response postGrade(Grade entity){
-        DAOInterface<Subject> subjectDAO= SubjectDAOFake.getInstance();
-        if (!subjectDAO.containsData(entity.getSubject().getId())
-                & entity.getSubject()!=null
-                & entity.getValue()!=null
-                & entity.getDate()!=null
-                & entity.getId()!=null) {
-            if (!gradesDAO.containsData(entity.getId()))
-                return Response.status(403).build();
-            gradesDAO.addData(entity);
-            return Response.status(201).entity(entity).build();
+    public Response postGrade(Grade entity, String path){
+        DAOInterface<Subject> subjectDAO = SubjectDAOFake.getInstance();
+        if (entity.getSubject()!=null) {
+            Subject existingSubject = subjectDAO.getData(entity.getSubject().getId());
+            if (existingSubject != null
+                    && entity.getValue() != null
+                    && entity.getDate() != null) {
+                entity.setSubject(existingSubject);
+                Grade newGrade = gradesDAO.addData(entity);
+                try {
+                    return Response.created(new URI(path+newGrade.getId())).build();
+                } catch (URISyntaxException e) {
+                    return Response.status(400).build();
+                }
+            }
         }
         return Response.status(400).build();
     }

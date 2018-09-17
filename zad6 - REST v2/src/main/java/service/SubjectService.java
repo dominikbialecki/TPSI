@@ -5,6 +5,8 @@ import Database.SubjectDAOFake;
 import model.Subject;
 
 import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 
 public class SubjectService extends Service {
@@ -55,12 +57,14 @@ public class SubjectService extends Service {
         return builder.build();
     }
 
-    public Response postSubject(Subject entity){
-        if (subjectDAO.containsData(entity.getId()))
-            return Response.status(403).build();
-        if (entity.getProfessor()!=null & entity.getName()!=null){
-            subjectDAO.addData(entity);
-            return Response.status(201).entity(entity).build();
+    public Response postSubject(Subject entity, String path){
+        if (entity.getProfessor()!=null && entity.getName()!=null){
+            Subject subject = subjectDAO.addData(entity);
+            try {
+                return Response.created(new URI(path+subject.getId())).build();
+            } catch (URISyntaxException e) {
+                return Response.status(400).build();
+            }
         }
         return Response.status(400).build();
     }
@@ -74,8 +78,8 @@ public class SubjectService extends Service {
             return Response.status(400).build();
         }
         if (subjectDAO.containsData(subjectId)) {
-            builder.status(200);
             subjectDAO.deleteData(subjectId);
+            builder.status(200);
         }
         return builder.build();
 

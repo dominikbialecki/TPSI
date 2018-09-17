@@ -42,7 +42,8 @@ public class SubjectResource {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response postSubject(Subject entity){
-        return this.subjectService.postSubject(entity);
+        String path = "subjects/";
+        return this.subjectService.postSubject(entity, path);
     }
 
     @DELETE

@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Student Grade Menager</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=500, initial-scale=1">
 </head>
 <body>
     <header>
@@ -23,48 +23,43 @@
             <h2>List of students</h2>
             <form>
                 <table>
-                    <tr>
-                        <td><input type="text" id="studentsIndex" onkeyup="myFunction()" placeholder="Index"></td>
-                        <td><input type="text" id="studentsName" onkeyup="myFunction()" placeholder="Name"></td>
-                        <td><input type="text" id="studentsSurname" onkeyup="myFunction()" placeholder="Surname"></td>
-                        <td><input type="text" id="studentsBrithdate" onkeyup="myFunction()" placeholder="Birthdate"></td>
-                        <td>Actions</td>
-                        <!--
-                        <td>Index</td>
-                        <td>Name</td>
-                        <td>Surname</td>
-                        <td>Birthday</td>
-                        <td>Actions</td>
-                        -->
-                    </tr>
+                    <thead>
+                        <tr>
+                            <td><input type="text" id="studentsIndex" onkeyup="myFunction()" placeholder="Index"></td>
+                            <td><input type="text" id="studentsName" onkeyup="myFunction()" placeholder="Name"></td>
+                            <td><input type="text" id="studentsSurname" onkeyup="myFunction()" placeholder="Surname"></td>
+                            <td><input type="text" id="studentsBrithdate" onkeyup="myFunction()" placeholder="Birthdate"></td>
+                            <td class="buttons">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td><input type="number" name="student1_index" value="122591"  required readonly></td>
                             <td><input type="text" name="student1_name" value="Dominik" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's name"></td>
                             <td><input type="text" name="student1_surname" value="Białecki" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's surname"></td>
                             <td><input type="date" name="student1_birthdate" value="1995-09-03" max="2000-12-31" min="1900-12-31"  required></td>
                             <!--<td><input type="text" name="student1_birthdate" value="1995-09-03" pattern='(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))'  required></td>-->
-                            <td>
+                            <td class="buttons">
                             <a href="#grades">See grades</a>
-                            <input type="submit" name="studentRedirect" value="See grades">
                             <input type="submit" name="studentPut" value="Edit">
                             <input type="submit" name="studentDelete" value="Delete">
                             </td>
                         </tr>
-                    <tr>
-                        <td><input type="number" name="student2_index" value="123456"  required readonly></td>
-                        <td><input type="text" name="student2_name" value="Jan" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's name"></td>
-                        <td><input type="text" name="student2_surname" value="Kowalski" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's surname"></td>
-                        <td><input type="date" name="student2_birthdate" value="1999-12-24" max="2000-12-31" min="1900-12-31"  required></td>
-                        <td>
-                            <a href="#grades">See grades</a>
-                            <input type="submit" name="studentRedirect" value="See grades">
-                            <input type="submit" name="studentPut" value="Edit">
-                            <input type="submit" name="studentDelete" value="Delete">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><input type="submit" name="studentNew" value="New"></td>
-                    </tr>
+                        <tr>
+                            <td><input type="number" name="student2_index" value="123456"  required readonly></td>
+                            <td><input type="text" name="student2_name" value="Jan" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's name"></td>
+                            <td><input type="text" name="student2_surname" value="Kowalski" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Student's surname"></td>
+                            <td><input type="date" name="student2_birthdate" value="1999-12-24" max="2000-12-31" min="1900-12-31"  required></td>
+                            <td class="buttons">
+                                <a href="#grades">See grades</a>
+                                <input type="submit" name="studentPut" value="Edit">
+                                <input type="submit" name="studentDelete" value="Delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="buttons"><input type="submit" name="studentNew" value="New"></td>
+                        </tr>
+                    </tbody>
                 </table>
             </form>
         </article>
@@ -76,40 +71,38 @@
             <h2>List of subjects</h2>
             <form>
                 <table>
-                    <tr>
-                        <td><input type="text" id="subjectName" onkeyup="myFunction()" placeholder="Subject"></td>
-                        <td><input type="text" id="subjectTeacher" onkeyup="myFunction()" placeholder="Teacher"></td>
-                        <td>Actions</td>
-                    <!--
-                        <td>Subject</td>
-                        <td>Teacher</td>
-                        <td>Actions</td>
-                    -->
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="subject1_name" value="Analiza Matematyczna" pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Subject's name"></td>
-                        <td><input type="text" name="student1_teacher" value="Stefan Banach" pattern="[A-Za-zÀ-ž ]{2,}" required placeholder="Teacher's name"></td>
-                        <td>
-                            <a href="#students">See students</a>
-                            <input type="submit" name="subjectRedirect" value="See students">
-                            <input type="submit" name="subjectPut" value="Edit">
-                            <input type="submit" name="subjectDelete" value="Delete">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="subject2_name" value="Algebra Liniowa"  pattern="[A-Za-zÀ-ž]{2,}" required placeholder="Subject's name"></td>
-                        <td><input type="text" name="student2_teacher" value="Przemysław Nowak" pattern="[[A-Za-zÀ-ž ]{2,}" required  placeholder="Teacher's name"></td>
-                        <td>
-                            <a href="#students">See students</a>
-                            <input type="submit" name="subjectRedirect" value="See students">
-                            <input type="submit" name="subjectPut" value="Edit">
-                            <input type="submit" name="subjectDelete" value="Delete">
+                    <thead>
+                        <tr>
+                            <td><input type="text" id="subjectName" onkeyup="myFunction()" placeholder="Subject"></td>
+                            <td><input type="text" id="subjectTeacher" onkeyup="myFunction()" placeholder="Teacher"></td>
+                            <td class="buttons">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="subject1_name" value="Analiza Matematyczna" pattern="[A-Za-zÀ-ž ]{2,}" required placeholder="Subject's name"></td>
+                            <td><input type="text" name="student1_teacher" value="Stefan Banach" pattern="[A-Za-zÀ-ž ]{2,}" required placeholder="Teacher's name"></td>
+                            <td class = buttons>
+                                <a href="#students">See students</a>
+                                <input type="submit" name="subjectPut" value="Edit">
+                                <input type="submit" name="subjectDelete" value="Delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="subject2_name" value="Algebra Liniowa"  pattern="[A-Za-zÀ-ž ]{2,}" required placeholder="Subject's name"></td>
+                            <td><input type="text" name="student2_teacher" value="Przemysław Nowak" pattern="[[A-Za-zÀ-ž ]{2,}" required  placeholder="Teacher's name"></td>
+                            <td class="buttons">
+                                <a href="#students">See students</a>
+                                <input type="submit" name="subjectRedirect" value="See students">
+                                <input type="submit" name="subjectPut" value="Edit">
+                                <input type="submit" name="subjectDelete" value="Delete">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="submit" name="new" value="New"></td>
-                    </tr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="buttons"><input type="submit" name="new" value="New"></td>
+                        </tr>
+                    </tbody>
                 </table>
             </form>
         </article>
@@ -121,49 +114,47 @@
             <h2>Student's grades</h2>
             <form>
                 <table>
-                    <tr>
-                        <td><input type="text" id="gradeGrade" onkeyup="myFunction()" placeholder="Grade"></td>
-                        <td><input type="text" id="gradeDate" onkeyup="myFunction()" placeholder="Date"></td>
-                        <td><input type="text" id="gradeSubject" onkeyup="myFunction()" placeholder="Subject"></td>
-                        <td>Actions</td>
-                    <!--
-                        <td>Grade</td>
-                        <td>Date</td>
-                        <td>Subject</td>
-                        <td>Actions</td>
-                    -->
-                    </tr>
-                    <tr>
-                        <td><input type="number" name="student1_grade" value="2" min="2" max="5" step="0.5"  required placeholder="Grade value"></td>
-                        <td><input type="date" name="student1_date" value="2018-05-10" min="2018-03-01" max="2018-07-01"  required></td>
-                        <td>
-                            <select>
-                                <option value="Analiza Matematyczna">Analiza Matematyczna</option>
-                                <option value="Algebra liniowa">Analiza Matematyczna</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="submit" name="gradePut" value="Edit">
-                            <input type="submit" name="gradeDelete" value="Delete">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" name="student2_grade" value="2" min="2" max="5" step="0.5"  required placeholder="Grade value"></td>
-                        <td><input type="date" name="student2_date" value="2018-05-02" min="2018-03-01" max="2018-07-01"  required></td>
-                        <td>
-                            <select>
-                                <option value="Analiza Matematyczna">Analiza Matematyczna</option>
-                                <option value="Algebra liniowa">Analiza Matematyczna</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="submit" name="gradePut" value="Edit">
-                            <input type="submit" name="gradeDelete" value="Delete">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4"><input type="submit" name="gradeNew" value="New"></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <td><input type="text" id="gradeGrade" onkeyup="myFunction()" placeholder="Grade"></td>
+                            <td><input type="text" id="gradeDate" onkeyup="myFunction()" placeholder="Date"></td>
+                            <td><input type="text" id="gradeSubject" onkeyup="myFunction()" placeholder="Subject"></td>
+                            <td class="buttons">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" name="student1_grade" value="2" min="2" max="5" step="0.5"  required placeholder="Grade value"></td>
+                            <td><input type="date" name="student1_date" value="2018-05-10" min="2018-03-01" max="2018-07-01"  required></td>
+                            <td>
+                                <select>
+                                    <option value="Analiza Matematyczna">Analiza Matematyczna</option>
+                                    <option value="Algebra liniowa">Analiza Matematyczna</option>
+                                </select>
+                            </td>
+                            <td class="buttons">
+                                <input type="submit" name="gradePut" value="Edit">
+                                <input type="submit" name="gradeDelete" value="Delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="student2_grade" value="2" min="2" max="5" step="0.5"  required placeholder="Grade value"></td>
+                            <td><input type="date" name="student2_date" value="2018-05-02" min="2018-03-01" max="2018-07-01"  required></td>
+                            <td>
+                                <select>
+                                    <option value="Analiza Matematyczna">Analiza Matematyczna</option>
+                                    <option value="Algebra liniowa">Analiza Matematyczna</option>
+                                </select>
+                            </td>
+                            <td class="buttons">
+                                <input type="submit" name="gradePut" value="Edit">
+                                <input type="submit" name="gradeDelete" value="Delete">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="buttons"><input type="submit" name="gradeNew" value="New"></td>
+                        </tr>
+                    </tbody>
                 </table>
             </form>
         </article>

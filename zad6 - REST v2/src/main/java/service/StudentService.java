@@ -6,6 +6,8 @@ import model.Student;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 
 public class StudentService extends Service {
@@ -35,13 +37,14 @@ public class StudentService extends Service {
     }
 
 
-    public Response postStudent(Student entity) {
-        if (studentDAO.containsData(entity.getIndex())) {
-            return Response.status(Response.Status.FORBIDDEN).build();
-        }
+    public Response postStudent(Student entity, String path) {
         if (entity.getName() != null && entity.getSurname() != null && entity.getBirthDate() != null) {
-            studentDAO.addData(entity);
-            return Response.status(201).entity(entity).build();
+            Student student = studentDAO.addData(entity);
+            try {
+                return Response.created(new URI(path+student.getIndex())).build();
+            } catch (URISyntaxException e) {
+                return Response.status(400).build();
+            }
         }
         return Response.status(400).build();
     }
@@ -72,7 +75,7 @@ public class StudentService extends Service {
             }
             studentDAO.updateData(student);
         }
-        return builder.entity(student).build();
+        return builder.build();
     }
 
     @DELETE

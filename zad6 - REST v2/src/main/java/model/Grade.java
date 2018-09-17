@@ -20,7 +20,7 @@ import java.util.List;
 public class Grade {
 
     private static int lastId = 0;
-    private synchronized int generateId(){ return lastId++; }
+    synchronized int generateId(){ return lastId++; }
 
     Grade(){}
     public Grade(float value, Date date, Subject subject){
@@ -54,7 +54,7 @@ public class Grade {
     public Date getDate() { return date; }
     public void setDate(Date date) { this.date = date; }
 
-    @XmlTransient
+    @XmlElement
     private Subject subject;
     public Subject getSubject() { return subject; }
     public void setSubject(Subject subject) { this.subject = subject; }
@@ -73,7 +73,7 @@ public class Grade {
             @InjectLink(
                     rel = "student",
                     resource = StudentResource.class,
-                    method = "getData"),
+                    method = "getStudent"),
             @InjectLink(
                     rel = "subject",
                     resource = SubjectResource.class,
@@ -84,6 +84,7 @@ public class Grade {
     @XmlElementWrapper(name = "links")
     @XmlJavaTypeAdapter(Link.JaxbAdapter.class)
     List<Link> links;
+
 
 
 }

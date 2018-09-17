@@ -55,12 +55,18 @@ public class SubjectDAOFake implements DAOInterface<Subject>{
 
     @Override
     public void deleteData(int id) {
+        GradesDAOFake.removeGradesWithSubjectId(id);
         subjects.remove(id);
     }
 
     @Override
-    public void addData(Subject object) {
-        subjects.put(object.getId(), object);
+    public Subject addData(Subject object) {
+        Subject subject = new Subject(
+                object.getName(),
+                object.getProfessor()
+        );
+        subjects.put(subject.getId(), subject);
+        return subject;
     }
 
     @Override

@@ -8,6 +8,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 
 
@@ -43,7 +45,10 @@ public class GradeResource {
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response postGrade(Grade entity, @PathParam("studentId") String studentId){
-        return new GradesService(studentId).postGrade(entity);
+//        URI path = new URI("students/"+studentId+"grades/");
+        String path = "students/"+studentId+"/grades/";
+
+        return new GradesService(studentId).postGrade(entity, path);
     }
 
     @DELETE
