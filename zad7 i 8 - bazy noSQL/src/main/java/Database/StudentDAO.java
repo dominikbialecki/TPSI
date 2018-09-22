@@ -35,20 +35,26 @@ public class StudentDAO {
     public Collection<Student> getCollection(String nameParam,
                                              String surnameParam,
                                              Date dateFromParam,
-                                             Date dateToParam) {
+                                             Date dateToParam,
+                                             Integer indexParam) {
         Query<Student> query = datastore.createQuery(Student.class);
 
         Optional<String> name = Optional.ofNullable(nameParam);
         Optional<String> surname = Optional.ofNullable(surnameParam);
         Optional<Date> dateFrom = Optional.ofNullable(dateFromParam);
         Optional<Date> dateTo = Optional.ofNullable(dateToParam);
+        Optional<Integer> index = Optional.ofNullable(indexParam);
 
-        name.ifPresent(s -> query.and(query.criteria("name").equal(s)));
-        surname.ifPresent(s -> query.and(query.criteria("surname").equal(s)));
+        name.ifPresent(s -> query.and(query.criteria("name").containsIgnoreCase(s)));
+        surname.ifPresent(s -> query.and(query.criteria("surname").containsIgnoreCase(s)));
         dateFrom.ifPresent(date -> query.and(query.criteria("birthDate").greaterThanOrEq(date)));
         dateTo.ifPresent(date -> query.and(query.criteria("birthDate").lessThanOrEq(date)));
 
-        return query.asList();
+        List<Student> list = query.asList();
+
+        index.ifPresent(i -> list.removeIf(item -> !String.valueOf(item.getIndex()).contains(i.toString())));
+
+        return list;
     }
 
     public Student getData(int id) {

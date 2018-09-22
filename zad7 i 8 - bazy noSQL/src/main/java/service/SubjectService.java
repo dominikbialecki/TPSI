@@ -17,8 +17,8 @@ public class SubjectService extends Service {
 
     private SubjectDAO subjectDAO = SubjectDAO.getInstance();
 
-    public Collection<Subject> getSubjects(String professor) {
-        return subjectDAO.getCollection(professor);
+    public Collection<Subject> getSubjects(String professor, String name) {
+        return subjectDAO.getCollection(professor, name);
     }
 
     public Response getSubject(ObjectId id) {
@@ -68,7 +68,7 @@ public class SubjectService extends Service {
 
     private void removeGradesWithSubjectId(ObjectId subjectID) {
         StudentDAO studentDAO = StudentDAO.getInstance();
-        studentDAO.getCollection(null, null, null, null).forEach( student -> {
+        studentDAO.getCollection(null, null, null, null, null).forEach( student -> {
             int initSize = student.getGrades().size();
             student.getGrades().values().removeIf(grade ->
                 grade.getSubject().getId().equals(subjectID)

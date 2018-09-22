@@ -21,8 +21,9 @@ public class SubjectResource {
 
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    public Collection<Subject> getSubjects(@QueryParam("professor") String professor) {
-        return this.subjectService.getSubjects(professor);
+    public Collection<Subject> getSubjects(@QueryParam("professor") String professor,
+                                           @QueryParam("name") String name) {
+        return this.subjectService.getSubjects(professor, name);
     }
 
     @GET

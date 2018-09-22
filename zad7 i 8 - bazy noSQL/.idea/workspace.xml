@@ -20,110 +20,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentDAOFake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/StudentDAOFake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1945#1946#0" expanded="true" />
-                <element signature="e#1985#1986#0" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
-                <element signature="e#2077#2078#0" expanded="true" />
-                <element signature="e#2138#2139#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2282#2283#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-                <element signature="e#2677#2678#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="72" column="60" lean-forward="false" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resource/SubjectResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectDAOFake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/SubjectDAOFake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1857#1858#0" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SubjectService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/SubjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="214">
+              <caret line="78" column="11" lean-forward="true" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GradesDAOFake.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java">
+      <file leaf-file-name="DateParamConverterProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/providers/DateParamConverterProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TPSInoSQLDB.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSInoSQLDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#1159#1160#0" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
-                <element signature="e#1738#1739#0" expanded="true" />
-                <element signature="e#1818#1819#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/SubjectDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradesDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Database/StudentDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="37" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/GradesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="43" column="100" lean-forward="false" selection-start-line="43" selection-start-column="100" selection-end-line="43" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradeResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/GradeResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="42" column="76" lean-forward="true" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,6 +130,7 @@
       <find>entity</find>
       <find>.entity</find>
       <find>put</find>
+      <find>304</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -187,23 +164,27 @@
         <option value="$PROJECT_DIR$/src/main/java/Database/FakeStudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/StudentsResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Database/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/TPSIRest1.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Lukasz.java" />
         <option value="$PROJECT_DIR$/../../ZWIWO/metalink/src/zwiwo/groovy/Main.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/Database/DAOInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resource/GradeResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Grade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/StudentDAOFake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/SubjectDAOFake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/providers/CustomHeaders.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/StudentResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/SubjectResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Database/StudentDAOFake.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/SubjectService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Database/SubjectDAOFake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/StudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/GradesDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Database/SubjectDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/GradesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/GradeResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/TPSInoSQLDB.java" />
       </list>
     </option>
   </component>
@@ -231,9 +212,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
-    <option name="width" value="990" />
+    <option name="y" value="-8" />
+    <option name="width" value="936" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectView">
@@ -256,29 +238,29 @@
           <expand>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -286,7 +268,7 @@
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -294,7 +276,7 @@
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -302,7 +284,7 @@
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -310,25 +292,31 @@
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zad6 - REST v2" type="462c0819:PsiDirectoryNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rest2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zad7 i 8 - bazy noSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -361,7 +349,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TPSInoSQLDB">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -377,6 +365,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="main.TPSIRest1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="rest2" />
+      <envs />
+    </configuration>
+    <configuration name="TPSInoSQLDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="main.TPSInoSQLDB" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -462,9 +469,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.TPSIRest1" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TPSInoSQLDB" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.TPSIRest1" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.TPSInoSQLDB" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TPSIRest1" />
       </list>
     </recent_temporary>
   </component>
@@ -490,19 +502,21 @@
       <workItem from="1528438947726" duration="88000" />
       <workItem from="1528976054550" duration="5154000" />
       <workItem from="1537098571083" duration="2708000" />
+      <workItem from="1537292724098" duration="1099000" />
+      <workItem from="1537293858426" duration="9000" />
+      <workItem from="1537293961116" duration="10513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57525000" />
+    <option name="totallyTimeSpent" value="69146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5276653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -510,13 +524,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.080625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27125505" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1848853" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17673522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18059126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -530,7 +545,6 @@
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,74 +554,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main/TPSInoSQLDB.java</url>
+          <line>38</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/SubjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/GradesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/SubjectResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentsResource.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Grade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/Resource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/SubjectResource.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -627,9 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,16 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentsResource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Grades.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/WidgetsResource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/Resource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/SubjectResource.java">
@@ -683,9 +629,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,9 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,9 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,35 +668,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Grades.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/Resource.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentsResource.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Database/DataBase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Lukasz.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSIRest1.java" />
     <entry file="file://$PROJECT_DIR$/../../ZWIWO/metalink/src/zwiwo/groovy/Main.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -770,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,98 +689,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/StudentDAOFake.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/SubjectDAOFake.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/providers/CustomHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ObjectIdJaxbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Grade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="434">
+          <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Database/StudentDAOFake.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2138#2139#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-            <element signature="e#2677#2678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="72" column="60" lean-forward="false" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StudentResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="-140">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/SubjectResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="255">
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="37" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/SubjectDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/providers/DateParamConverterProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/SubjectService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Database/SubjectDAOFake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/GradeResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        <state relative-caret-position="214">
+          <caret line="78" column="11" lean-forward="true" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -878,30 +805,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/GradesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-973">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-55">
+          <caret line="43" column="100" lean-forward="false" selection-start-line="43" selection-start-column="100" selection-end-line="43" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Database/GradesDAOFake.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/GradeResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        <state relative-caret-position="298">
+          <caret line="42" column="76" lean-forward="true" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/TPSInoSQLDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -10,7 +10,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 
 
 @Path("students/{studentId}/grades")
@@ -29,7 +31,20 @@ public class GradeResource {
         String minValue = info.getQueryParameters().getFirst("minValue");
         String maxValue = info.getQueryParameters().getFirst("maxValue");
         ObjectId subjectId = (subjectIdString != null) ? new ObjectId(subjectIdString) : null;
-        return gradesService.getGrades(studentId, subjectId, minValue, maxValue);
+
+        return gradesService.getGrades(studentId, subjectId, minValue, maxValue, null, null);
+    }
+
+    private Date parseDate(String value) throws WebApplicationException {
+        if (value != null && value.length()<9) {
+            return null;
+        }
+        try {
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            return formatter.parse(value);
+        } catch (Exception ex) {
+            throw new WebApplicationException("Bad formatted date", 400);
+        }
     }
 
     @GET

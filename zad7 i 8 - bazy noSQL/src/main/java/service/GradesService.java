@@ -13,6 +13,7 @@ import javax.ws.rs.core.Response;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collection;
+import java.util.Date;
 
 public class GradesService extends Service {
 
@@ -25,7 +26,12 @@ public class GradesService extends Service {
         }
     }
 
-    public Collection<Grade> getGrades(int studentIndex, ObjectId subjectId, String minValueS, String maxValueS) {
+    public Collection<Grade> getGrades(int studentIndex,
+                                       ObjectId subjectId,
+                                       String minValueS,
+                                       String maxValueS,
+                                       Date dateFrom,
+                                       Date dateTo) {
         Float minValue;
         Float maxValue;
         try {
@@ -35,7 +41,7 @@ public class GradesService extends Service {
             throw new BadRequestException("Wrong value format");
         }
         checkIfStudentExists(studentIndex);
-        return gradesDAO.getCollection(studentIndex, subjectId, minValue, maxValue);
+        return gradesDAO.getCollection(studentIndex, subjectId, minValue, maxValue, dateFrom, dateTo);
     }
 
     public Response getGrade(int studentIndex, int gradeId) {

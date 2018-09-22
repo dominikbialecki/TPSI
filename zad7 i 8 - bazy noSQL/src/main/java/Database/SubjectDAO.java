@@ -6,6 +6,8 @@ import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Key;
 import org.mongodb.morphia.query.Query;
 
+import javax.ws.rs.WebApplicationException;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -29,12 +31,14 @@ public class SubjectDAO {
         return instance;
     }
 
-    public Collection<Subject> getCollection(String professorParam) {
+    public Collection<Subject> getCollection(String professorParam, String nameParam) {
 
         Query<Subject> query = datastore.createQuery(Subject.class);
 
         Optional<String> professor = Optional.ofNullable(professorParam);
-        professor.ifPresent(s -> query.and(query.criteria("professor").equal(s)));
+        Optional<String> name = Optional.ofNullable(nameParam);
+        professor.ifPresent(s -> query.and(query.criteria("professor").containsIgnoreCase(s)));
+        name.ifPresent(s -> query.and(query.criteria("name").containsIgnoreCase(s)));
 
         return query.asList();
     }

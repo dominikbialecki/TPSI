@@ -36,8 +36,9 @@ public class StudentService extends Service {
     public Collection<Student> getStudents(String name,
                                            String surname,
                                            Date dateFrom,
-                                           Date dateTo) {
-        return studentDAO.getCollection(name, surname, dateFrom, dateTo);
+                                           Date dateTo,
+                                           Integer index) {
+        return studentDAO.getCollection(name, surname, dateFrom, dateTo, index);
     }
 
 

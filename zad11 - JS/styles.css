@@ -1,0 +1,130 @@
+body {
+    display:flex;
+    flex-wrap:wrap;
+    background-color:#3F42FF;
+    color:#070C24;
+    font-family: "Arial", Times, serif;
+    font-size: 1em;
+}
+
+a:hover{
+    color:#070c24;
+    text-decoration: underline;
+}
+a{
+    color:#070c24;
+    text-decoration: none;
+}
+h1, h2{
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+header {
+    flex: 100%;
+    background-color:#20217F;
+}
+
+
+ article {
+ }
+
+nav {
+    flex:10%;
+    background:linear-gradient(to top, #3F42FF, #20217F);
+ }
+
+ footer {
+    flex: 100%;
+     background-color:#3335CC;
+
+}
+
+div {
+    display: none;
+}
+
+div:target{
+    flex: 90%;
+    display:block;
+
+}
+
+thead tr {
+    background-color: #20217F;
+}
+tr {
+   background-color: #7879ff;
+}
+
+tr:nth-child(even) {
+    background-color: #4f4fa8;
+}
+
+tr:hover {
+    background-color: rgba(120, 121, 255, 0.54);
+}
+
+
+
+
+input:invalid {
+    color : red;
+}
+
+
+
+input, select {
+    height: auto;
+    border: none;
+    color:#070C24;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: "Arial", Times, serif;
+}
+
+@media print {
+    div:target {
+        display: block;
+    }
+    nav, footer, header {
+        display: none;
+    }
+    body{
+        background-color: white;
+        color: black;
+    }
+    tr:nth-child(even), tr:nth-child(odd) {
+        background-color: white;
+    }
+    ::placeholder {
+        color: black;
+    }
+
+    td {
+        border-bottom: 1px solid #000000;
+    }
+
+    td:last-child{
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+
+
+

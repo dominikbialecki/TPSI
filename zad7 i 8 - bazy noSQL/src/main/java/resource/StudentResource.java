@@ -24,9 +24,10 @@ public class StudentResource {
     public Collection<Student> getStudents(@QueryParam("name") String name,
                                            @QueryParam("surname") String surname,
                                            @QueryParam("dateFrom") Date dateFrom,
-                                           @QueryParam("dateTo") Date dateTo
+                                           @QueryParam("dateTo") Date dateTo,
+                                           @QueryParam("index") Integer index
                                            ) {
-        return this.studentService.getStudents(name, surname, dateFrom, dateTo);
+        return this.studentService.getStudents(name, surname, dateFrom, dateTo, index);
     }
 
     @GET

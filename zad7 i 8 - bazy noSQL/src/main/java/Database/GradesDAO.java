@@ -33,17 +33,26 @@ public class GradesDAO {
         return studentDAO.getData(studentIndex);
     }
 
-    public Collection<Grade> getCollection(int studentIndex, ObjectId subjectIdParam, Float minValueParam, Float maxValueParam) {
+    public Collection<Grade> getCollection(int studentIndex,
+                                           ObjectId subjectIdParam,
+                                           Float minValueParam,
+                                           Float maxValueParam,
+                                           Date dateFromParam,
+                                           Date dateToParam) {
 
         Optional<ObjectId> subjectId = Optional.ofNullable(subjectIdParam);
         Optional<Float> minValue = Optional.ofNullable(minValueParam);
         Optional<Float> maxValue = Optional.ofNullable(maxValueParam);
+        Optional<Date> dateFrom = Optional.ofNullable(dateFromParam);
+        Optional<Date> dateTo = Optional.ofNullable(dateToParam);
 
         Collection<Grade> grades = getStudent(studentIndex).getGrades().values();
 
         subjectId.ifPresent(id -> grades.removeIf(grade -> !grade.getSubject().getId().equals(id)));
         minValue.ifPresent(f -> grades.removeIf(grade -> grade.getValue() < f));
         maxValue.ifPresent(f -> grades.removeIf(grade -> grade.getValue() > f));
+        dateFrom.ifPresent(date -> grades.removeIf(grade -> grade.getDate().before(date)));
+        dateTo.ifPresent(date -> grades.removeIf(grade -> grade.getDate().after(date)));
 
         return grades;
     }

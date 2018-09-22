@@ -11,6 +11,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb.morphia:morphia:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.proxytoys:proxytoys:1.0" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-server:2.22.2" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-common:2.22.2" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.22.2" level="project" />
